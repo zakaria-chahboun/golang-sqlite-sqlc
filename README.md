@@ -12,7 +12,7 @@ In the example in `app.go` , I added a new function by `sqlite driver` called `n
 go mod tidy
 ```
 
-You can add your sql schema into `schema.sql` file, Then add your queries into `query.sql`,
+You can add your sql schema into `models/schema/schema.sql` file, Then add your queries into `models/query/*.sql`,
 
 To generate go files for your *schema/query*, run:
 ```
