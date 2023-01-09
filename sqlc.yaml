@@ -1,10 +1,12 @@
 version: 2
 sql:
   - engine: "sqlite"
-    schema: "schema.sql"
-    queries: "query.sql"
+    schema: "models/schema"
+    queries: "models/query"
     gen:
       go:
-        package: "tutorial"
-        out: "tutorial"
-
+        package: "db"
+        out: "db"
+        emit_json_tags: true
+        json_tags_case_style: "snake"
+        emit_prepared_queries: true
