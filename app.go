@@ -121,6 +121,7 @@ func main() {
 }
 
 func newID(ctx2 *sqlite.FunctionContext, args []driver.Value) (driver.Value, error) {
-	id, _ := gonanoid.Generate("abcd1234efgh5678ijkl90mnopqrstuvwxyz", 8)
-	return fmt.Sprintf("%v.%v", args[0], id), nil
+	const defaultRandomAlphabet = "abcdefghijklmnopqrstuvwxyz0123456789"
+	id, _ := gonanoid.Generate(defaultRandomAlphabet, 7)
+	return id, nil
 }

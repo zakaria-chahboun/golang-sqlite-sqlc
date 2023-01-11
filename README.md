@@ -4,7 +4,7 @@ In this example i didn't use ORMs, Instead i used a compiled go files from sqlc 
 
 I also used this new SQLite driver with No CGO from https://gitlab.com/cznic/sqlite
 
-In the example in `app.go` , I added a new function by `sqlite driver` called `new_name()`, And i called it from SQL query directly! *it's just return "zaki!"*
+In the example in `app.go` , I added a new function by `sqlite driver` called `new_id()`, And i called it from SQL query directly!
 
 ## Installation
 
